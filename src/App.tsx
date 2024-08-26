@@ -1,24 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
+import axios from 'axios';
 
 function App() {
+  // const myKey = process.env.REACT_APP_API_KEY;
+  // console.log(myKey)
+  type weathers = {id: number; temp: number; main: string; icon: string}
+  const [weather, setWeather] = useState<weathers>();
+
+  const getWeather = () => {
+    const myKey = process.env.REACT_APP_API_KEY;
+    console.log(myKey)
+    axios.get(`https://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=${myKey}`).then((res)=>{
+      const datas = res.data;
+      setWeather({
+        id : datas.weather[0].id,
+        temp : datas.main.temp,
+        main: datas.weather[0].main,
+        icon: datas.weather[0].icon
+      })
+    })
+  }
+  console.log(weather)
+  const weatherIcon = `https://openweathermap.org/img/wn/${weather?.icon}.png`;
+  useEffect(()=>{getWeather()},[])
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <div>오늘의 서울 날씨 입니다.</div>
+     <div>{weather?.main}</div>
+     <div><img src={weatherIcon} alt="날씨 아이콘" /></div>
+     <div>{weather?.temp}</div>
     </div>
   );
 }
