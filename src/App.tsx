@@ -10,7 +10,6 @@ function App() {
 
   const getWeather = () => {
     const myKey = process.env.REACT_APP_API_KEY;
-    console.log(myKey)
     axios.get(`https://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=${myKey}`).then((res)=>{
       const datas = res.data;
       setWeather({
