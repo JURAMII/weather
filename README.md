@@ -1,46 +1,22 @@
-# Getting Started with Create React App
+# 오늘의 서울 날씨
+현재 서울의 날씨를 확인해보세요!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🌞개발기간
+2024.08.26 - 09.02
 
-## Available Scripts
+#  🌞Stacks
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+<img src="https://img.shields.io/badge/Scss-CC6699?style=for-the-badge&logo=Scss&logoColor=white">
 
-In the project directory, you can run:
+and OpenWeatherMap API & axios
 
-### `npm start`
+#  🌞JURAM's Comment
+타입스크립트, scss와 OpenWeatherMap API를 사용하여 현재 서울 날씨를 확인할 수 있는 웹페이지를 만들어보았습니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+OpenWeatherMap API 구성 중에서 axios로 필요한 부분만 호출하였습니다.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+날씨와 시간에 따라 날씨 아이콘과 배경색이 변하도록 구현하였습니다.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
