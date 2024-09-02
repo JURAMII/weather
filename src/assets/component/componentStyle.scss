@@ -1,11 +1,18 @@
+@mixin fw400 {
+    font-weight: 400;
+}
+
+
 //times
 .timesWrap {
+
     h2 {
+        padding-top: 20px;
         font-size: 40px;
-        font-weight: 400;
+        @include fw400;
     }
     h3 {
-        font-weight: 400;
+        @include fw400;
     }
 }
 
@@ -21,6 +28,6 @@
     }
     h5 {
         font-size: 30px;
-        font-weight: 400;
+        @include fw400;
     }
 }
