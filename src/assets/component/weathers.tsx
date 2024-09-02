@@ -31,9 +31,7 @@ export default function Weathers() {
   return (
     <div className="weathersWrap">
       <h4>{weather?.temp}<span>°</span></h4>
-      <div>
-        <img src={`${process.env.PUBLIC_URL}/img/${weather?.main}.png`} alt="날씨 아이콘" />
-      </div>
+      <img src={`${process.env.PUBLIC_URL}/img/${weather?.main}.png`} alt="날씨 아이콘" />
       <h5>{weather?.main}</h5>
     </div>
   );

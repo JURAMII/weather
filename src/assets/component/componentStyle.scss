@@ -7,7 +7,7 @@
 .timesWrap {
 
     h2 {
-        padding-top: 20px;
+        padding-top: 30px;
         font-size: 40px;
         @include fw400;
     }
@@ -18,7 +18,10 @@
 
 // weathers
 .weathersWrap {
+    $p30:30px;
+
     h4 {
+        padding: $p30 0;
         font-size: 100px;
         position: relative;
 
@@ -27,6 +30,7 @@
         }
     }
     h5 {
+        padding: $p30 0;
         font-size: 30px;
         @include fw400;
     }
